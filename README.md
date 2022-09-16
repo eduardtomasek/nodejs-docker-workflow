@@ -1,6 +1,6 @@
 # NodeJS Docker Workflow Blueprint
 
-# Quick instructions
+## Quick instructions
 ```bash
 docker build -t node-app-image .
 ```
