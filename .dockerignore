@@ -4,5 +4,4 @@ Dockerfile
 .git
 .gitignore
 README.md
-package-lock.json
 docker-compose*
