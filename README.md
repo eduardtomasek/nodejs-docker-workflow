@@ -39,6 +39,8 @@ docker image rm node-app-image
 ```
 
 ```bash
+# enter into container with bash
+
 docker exec -it node-app bash
 ```
 
@@ -47,7 +49,7 @@ docker volume ps
 ```
 
 ```bash
-# very risky
+# very risky, remove all volumes
 
 docker volume prune
 ```
@@ -63,5 +65,23 @@ docker-compose up -d --build
 ```
 
 ```bash
+# delete all with attached volumes
+
 docker-compose down -v
+```
+
+```bash
+# dev
+
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build
+```
+
+```bash
+# prod
+
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
 ```

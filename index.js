@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     res.send({
         data: {
             message: 'Hello world!',
-            exclamation: '!',
+            exclamation: '!!!',
         },
     })
 })
