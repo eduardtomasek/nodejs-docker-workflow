@@ -35,6 +35,10 @@ docker rm node-app -fv
 ```
 
 ```bash
+docker image rm node-app-image
+```
+
+```bash
 docker exec -it node-app bash
 ```
 
@@ -50,6 +54,12 @@ docker volume prune
 
 ```bash
 docker-compose up -d
+```
+
+```bash
+# on up rebuild image
+
+docker-compose up -d --build
 ```
 
 ```bash
